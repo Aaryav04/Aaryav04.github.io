@@ -1,0 +1,13 @@
+/* Add your custom styles here */
+
+.filter-btn.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.product-item {
+    display: block;
+}
+
+.product-item.hidden {
+    display: none;
+}

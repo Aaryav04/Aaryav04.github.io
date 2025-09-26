@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hetave Enterprises Private Limited</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="/" class="text-2xl font-bold text-gray-800">Hetave Enterprises</a>
+                </div>
+                <div class="hidden md:block">
+                    <nav class="flex items-center space-x-4">
+                        <a href="/" class="text-gray-600 hover:text-gray-800">Home</a>
+                        <a href="about.html" class="text-gray-600 hover:text-gray-800">About</a>
+                        <a href="products.html" class="text-gray-600 hover:text-gray-800">Products</a>
+                        <a href="careers.html" class="text-gray-600 hover:text-gray-800">Careers</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact</a>
+                    </nav>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold">Contact Us</h1>
+            <p class="text-lg">We'd love to hear from you. Get in touch with us today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="from_name" class="w-full px-3 py-2 border rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="from_email" class="w-full px-3 py-2 border rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-bold mb-2">Phone</label>
+                            <input type="tel" id="phone" name="contact_number" class="w-full px-3 py-2 border rounded-md">
+                        </div>
+                        <div class="mb-4">
+                            <label for="reason" class="block text-gray-700 font-bold mb-2">Reason for Contact</label>
+                            <select id="reason" name="reason" class="w-full px-3 py-2 border rounded-md">
+                                <option>General Inquiry</option>
+                                <option>Product Support</option>
+                                <option>Sales</option>
+                                <option>Careers</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border rounded-md" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded-md hover:bg-blue-600">Send Message</button>
+                    </form>
+                    <p id="responseMessage" class="mt-4 text-center"></p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Information</h2>
+                    <p class="text-gray-600 mb-4"><strong>Address:</strong>292, RAMA VIHAR , BEHIND D- MART , BHILWARA, Rajasthan, India - 311001</p>
+                    <p class="text-gray-600 mb-4"><strong>Email:</strong> info@hetaveenterprises.com</p>
+                    <p class="text-gray-600 mb-4"><strong>Phone:</strong>+91 80952 89835</p>
+                    <div class="h-64 bg-gray-300 rounded-md">
+                        <!-- Google Maps embed will go here -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14419.782593843753!2d74.628362!3d25.373138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c2f08df8f661%3A0x16e186cdb564ef07!2sRama%20Vihar!5e0!3m2!1sen!2sus!4v1758915923343!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hetave Enterprises</h3>
+                    <p class="text-gray-400">Innovate, Manufacture, Excel</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">123 Business Street, Industrial Park, City State 12345</p>
+                    <p class="text-gray-400">info@hetaveenterprises.com</p>
+                    <p class="text-gray-400">+1 (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p class="text-gray-400">&copy; 2023 Hetave Enterprises Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            emailjs.init('SfFsa2S-GztgscvQ1'); // Replace with your EmailJS public key
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                contact_number: document.getElementById('phone').value,
+                reason: document.getElementById('reason').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send('service_4atwz5i', 'template_816tui6', templateParams) // Replace with your service and template IDs
+                .then(function(response) {
+                    document.getElementById('responseMessage').innerHTML = '<span class="text-green-600 font-bold">Message sent successfully!</span>';
+                    // Send auto-reply to the user
+                    emailjs.send('service_4atwz5i', 'template_gp3twzq', templateParams) // Replace with your auto-reply template ID
+                        .then(function(response) {
+                            console.log('Auto-reply sent successfully!');
+                        }, function(error) {
+                            console.log('Failed to send auto-reply:', error);
+                        });
+                    document.getElementById('contactForm').reset();
+                }, function(error) {
+                    document.getElementById('responseMessage').innerHTML = '<span class="text-red-600 font-bold">Failed to send message. Please try again.</span>';
+                });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
